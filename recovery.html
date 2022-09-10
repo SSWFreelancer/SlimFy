@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fitness SlimFy</title>
+   <link rel="stylesheet" href="css/nice-select.css"> 
+   <link rel="stylesheet" href="css/style.css"> 
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header authorization-header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/header/logo.svg" alt="">
+				</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#experts" class="menu__link">Эксперты Slimfy</a></li>
+						<li class="menu__item"><a href="#usefull" class="menu__link">Расписание занятий</a></li>
+						<li data-da=".header__container, 980, 2" class="menu__item menu__item-other"><a href="#" class="menu__link">Вступить в клуб</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Вход для членов клуба</a></li>
+					</ul>
+				</nav>
+				<select class="header__language">
+					<option value="Рус">
+						Рус
+					</option>
+					<option value="En">
+						En
+					</option>
+				</select>
+				<div class="header__burger"><span></span></div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="main authorization-main">
+				<div class="main__body">
+					<div class="main__container">
+						<div class="main__content">
+							<div class="form-main__logo">
+								<img src="img/header/logo.svg" alt="">
+							</div>							
+							<form action="#" class="form-main recovery-form-main">
+								<div class="form-main__title">
+									Восстановление <br>доступа в клуб
+								</div>
+								<div class="recovery-form-main__content">						
+									<p>
+										<input type="email" class="form-main__input">
+										<label for="">Введите ваш email</label>
+									</p>
+									<div class="g-recaptcha" data-sitekey="6LfnYuchAAAAAIccZP6i7VtKHD9b9SFd2ZSOJRqR"></div>
+									<div class="text-danger" id="recaptchaError"></div>
+									<div class="form-main__bottom">
+										<button class="form-main__button button">
+											<span>Отправить пароль</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="main__image">
+							<img src="img/main/2.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>		
+		</main>
+	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/dynamicAdapt.js"></script>  
+<script src="js/jquery.nice-select.js"></script>  
+<script src="js/script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fitness SlimFy</title>
+   <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+	<div class="wrapper">
+		<div class="quiz">
+			<div class="quiz__container">
+				<div class="quiz__top">
+					<p class="this-active">
+						<img width="25px" src="img/quiz/check.svg" alt="">
+						<span>
+							Ваша<br> цель
+						</span>
+					</p>
+					<b class="this-active"></b>
+					<p class="this-active">
+						<img width="25px" src="img/quiz/check.svg" alt="">
+						<span>
+							Уровень <br>физической<br> нагрузки
+						</span>						
+					</p>
+						<b class="this-active"></b>
+					<p>
+						3
+						<span>
+							Персональная <br>информация
+						</span>
+					</p>
+				</div>
+				<div class="quiz__body">
+					<div class="quiz__content quiz2__content">
+						<h3 class="quiz__title">
+							Уровень физической нагрузки
+						</h3>
+						<div class="quiz__subtitle">
+							Опишите свой обычный день
+						</div>
+						<p>
+							<input checked type="radio" id="office" name="quiz2">
+							<label for="office"><span></span>Работаю в офисе</label>
+						</p>
+						<p>
+							<input type="radio" id="home" name="quiz2">
+							<label for="home"><span></span>В основном нахожусь дома</label>
+						</p>
+						<p>
+							<input type="radio" id="physical" name="quiz2">
+							<label for="physical"><span></span>Работаю с небольшими физическими нагрузками</label>
+						</p>		
+						<p>
+							<input type="radio" id="production" name="quiz2">
+							<label for="production"><span></span>Тружусь на производстве</label>
+						</p>																		
+						<a href="quiz3.html" class="quiz__button button">
+							<span>Далее</span>
+							<img src="img/main/arrow.svg" alt="">
+						</a>
+					</div>
+					<div class="quiz__image">
+						<img src="img/quiz/1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/dynamicAdapt.js"></script>  
+<script src="js/jquery.nice-select.js"></script>  
+<script src="js/script.js"></script>  
+</body>
+</html>

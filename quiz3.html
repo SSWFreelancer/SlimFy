@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fitness SlimFy</title>
+   <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+	<div class="wrapper">
+		<div class="quiz">
+			<div class="quiz__container">
+				<div class="quiz__top">
+					<p class="this-active">
+						<img width="25px" src="img/quiz/check.svg" alt="">
+						<span>
+							Ваша<br> цель
+						</span>
+					</p>
+					<b class="this-active"></b>
+					<p class="this-active">
+						<img width="25px" src="img/quiz/check.svg" alt="">
+						<span>
+							Уровень <br>физической<br> нагрузки
+						</span>						
+					</p>
+						<b class="this-active"></b>
+					<p class="this-active">
+						<img width="25px" src="img/quiz/check.svg" alt="">
+						<span>
+							Персональная <br>информация
+						</span>
+					</p>
+				</div>
+				<div class="quiz__body">
+					<div class="quiz__content quiz3__content">
+						<h3 class="quiz__title">
+							Персональная информация
+						</h3>
+						<div class="quiz__subtitle">
+							Расскажите немного о себе
+						</div>		
+						<p>
+							<input type="text" name="name">
+							<label>Вас зовут</label>
+						</p>	
+						<p>						
+							<input type="number" name="year">							
+							<label>Полных лет</label>
+							<span>
+								Ошибка пож-та исправьте форму
+							</span>								
+						</p>		
+						<p>
+							<input type="number" name="growth">
+							<label>Ваш рост</label>
+							<span>
+								Ошибка пож-та исправьте форму
+							</span>									
+						</p>	
+						<p>
+							<input type="number" name="weight">
+							<label>Ваш текущий вес</label>
+							<span>
+								Ошибка пож-та исправьте форму
+							</span>								
+						</p>	
+						<p>
+							<input type="email" required>
+							<label>Ваш e-mail</label>
+						</p>																																							
+						<a href="quiz2.html" class="quiz__button button">
+							<span>Перейти к профилю</span>
+							<img src="img/main/arrow.svg" alt="">
+						</a>
+					</div>
+					<div class="quiz__image">
+						<img src="img/quiz/1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/dynamicAdapt.js"></script>  
+<script src="js/jquery.nice-select.js"></script>  
+<script src="js/script.js"></script>  
+</body>
+</html>

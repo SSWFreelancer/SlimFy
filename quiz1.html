@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fitness SlimFy</title>
+   <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+	<div class="wrapper">
+		<div class="quiz">
+			<div class="quiz__container">
+				<div class="quiz__top">
+					<p class="this-active">
+						1
+						<span>
+							Ваша<br> цель
+						</span>
+					</p>
+					<b class="this-active"></b>
+					<p>
+						2
+						<span>
+							Уровень <br>физической<br> нагрузки
+						</span>						
+					</p>
+						<b></b>
+					<p>
+						3
+						<span>
+							Персональная <br>информация
+						</span>
+					</p>
+				</div>
+				<div class="quiz__body">
+					<div class="quiz__content quiz1__content">
+						<div class="quiz__overtitle overtitle">
+							Ваша цель
+						</div>
+						<h3 class="quiz__title">
+							Для начала мы немного познакомимся с Вами и создадим персональный профиль.
+						</h3>
+						<div class="quiz__subtitle">
+							Выберите ваши приоритетные цели:
+						</div>
+						<p>
+							<input checked type="checkbox" id="tone">
+							<label for="tone"><span></span>Повысить свой тонус</label>
+						</p>
+						<p>
+							<input type="checkbox" id="weight">
+							<label for="weight"><span></span>Сбросить вес</label>
+						</p>
+						<p>
+							<input type="checkbox" id="weight-up">
+							<label for="weight-up"><span></span>Набрать массу</label>
+						</p>
+						<p>
+							<input type="checkbox" id="meditation">
+							<label for="meditation"><span></span>Медитации и расслабления</label>
+						</p>		
+						<p>
+							<input type="checkbox" id="moreInfo">
+							<label for="moreInfo"><span></span>Узнать что-то новое</label>
+						</p>																		
+						<a href="quiz2.html" class="quiz__button button">
+							<span>Далее</span>
+							<img src="img/main/arrow.svg" alt="">
+						</a>
+					</div>
+					<div class="quiz__image">
+						<img src="img/quiz/1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/dynamicAdapt.js"></script>  
+<script src="js/jquery.nice-select.js"></script>  
+<script src="js/script.js"></script>  
+</body>
+</html>
