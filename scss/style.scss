@@ -43,8 +43,42 @@ body{
 	font-family: 'Proxima Nova', sans-serif;
 	font-weight: 400;
 	background-color: #fff;
+	&.auth{
+		@media(max-width: 1233px){
+			background-color: #1e1e1e;
+		}
+	}
 }
-
+.cookies{
+	background: linear-gradient(90.55deg, #324FFF -4.57%, #CA00FF 99.67%);
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	position: fixed; left: 0; bottom: 0px; width: 100%;
+	padding: 10px 0;
+	& p{
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 19px;
+		color: #FFFFFF;
+		@media(max-width: 600px){
+			font-size: 14px;
+			line-height: 18px;
+		}
+		& button{
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 19px;
+			color: #FFFFFF;				
+			margin-left: 19px;
+			padding: 6px 17px;
+			background: #FF7900;
+			border-radius: 50px;
+		}
+	}
+}
 .wrapper {
 	min-height: 100%;
 	overflow:hidden;
@@ -733,10 +767,12 @@ body{
 	&__button {
 		display: flex;
 		align-items: center;
-		width: 247px;
+		min-width: 247px;
+		padding: 0 15px;
 		height: 72px;
 		justify-content: center;
 		margin-right: 47px;
+		text-align: center;
 		@media(max-width: 525px){
 			width: 100%;
 			margin-right: 0;
@@ -909,39 +945,6 @@ h2{
 		margin-top: 56px;
 		&.experts-usefull {
 			margin-bottom: 27px;
-		}
-	}
-	& .cookies{
-		background: linear-gradient(90.55deg, #324FFF -4.57%, #CA00FF 99.67%);
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-		z-index: 5;
-		position: absolute; left: 0; top: -70px; width: 100%;
-		padding: 10px 0;
-		@media(max-width: 600px){
-			top: -56px;
-		}
-		& p{
-			font-weight: 600;
-			font-size: 16px;
-			line-height: 19px;
-			color: #FFFFFF;
-			@media(max-width: 600px){
-				font-size: 14px;
-				line-height: 18px;
-			}
-			& button{
-				font-weight: 700;
-				font-size: 16px;
-				line-height: 19px;
-				color: #FFFFFF;				
-				margin-left: 19px;
-				padding: 6px 17px;
-				background: #FF7900;
-				border-radius: 50px;
-			}
 		}
 	}
 	&.experts-usefull{
@@ -2060,7 +2063,8 @@ h4{
 		max-width: 100%;
 		margin: 0 auto;
 		height: 72px;
-		width: 247px;
+		padding: 0 15px;
+		min-width: 247px;
 		@media(max-width: 600px){
 			width: calc(100% - 10px);
 		}
@@ -2251,6 +2255,9 @@ h4{
 			}
 			@media(max-width: 1023px){
 				width: 90px;
+			}
+			@media(max-width: 374px){
+				width: 81px;
 			}
 		}
 		& p{
